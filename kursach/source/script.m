@@ -70,7 +70,7 @@ Y_k = kinterval(max(Y1_lb, Y2_lb), min(Y1_ub, Y2_ub));
 X_k = kinterval([X_lb ones(size(X_lb, 1), 1)], [X_ub ones(size(X_ub, 1), 1)]);
 b_set = [];
 figure
-for i=1:6
+for i=1:7
   cur_X = X_k(i:i+1, :);
   cur_Y = Y_k(i:i+1);
   [betta, ~] = subdiff(cur_X, cur_Y);
